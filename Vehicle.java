@@ -1,0 +1,42 @@
+package parking;
+
+public class Vehicle {
+    private String vehicleNumber;
+    private String ownerName;
+    private String vehicleType;
+
+    public Vehicle(String vehicleNumber, String ownerName, String vehicleType) {
+        this.vehicleNumber = vehicleNumber;
+        this.ownerName = ownerName;
+        this.vehicleType = vehicleType;
+    }
+
+    public String getVehicleNumber() {
+        return vehicleNumber;
+    }
+
+    public String getOwnerName() {
+        return ownerName;
+    }
+
+    public String getVehicleType() {
+        return vehicleType;
+    }
+    
+    public void setVehicleNumber(String vehicleNumber) {
+        this.vehicleNumber = vehicleNumber;
+    }
+
+    public void setOwnerName(String ownerName) {
+        this.ownerName = ownerName;
+    }
+
+    public void setVehicleType(String vehicleType) {
+        this.vehicleType = vehicleType;
+    }
+    public void displayVehicle() {
+        System.out.println("Vehicle Number: " + vehicleNumber);
+        System.out.println("Owner Name: " + ownerName);
+        System.out.println("Vehicle Type: " + vehicleType);
+    }
+}
